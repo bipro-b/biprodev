@@ -1,0 +1,23 @@
+export default function CTA() {
+  return (
+    <section className="py-28 bg-gradient-to-br from-blue-600/10 to-purple-600/10">
+      <div className="container mx-auto px-6 text-center max-w-3xl">
+        <h2 className="text-4xl font-bold">
+          Ready to Build Stable Infrastructure?
+        </h2>
+
+        <p className="mt-6 text-slate-400">
+          Let’s design a production-ready DevOps system tailored to your growth.
+        </p>
+
+        <a
+          href="YOUR_CALENDLY_LINK"
+          target="_blank"
+          className="mt-10 inline-block px-10 py-5 rounded-2xl bg-blue-600 hover:bg-blue-500 transition font-semibold text-lg shadow-xl shadow-blue-600/20"
+        >
+          Book Strategy Call
+        </a>
+      </div>
+    </section>
+  );
+}
