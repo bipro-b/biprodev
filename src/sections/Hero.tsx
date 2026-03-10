@@ -1,5 +1,6 @@
 "use client";
 
+import BookingModal from "@/components/BookingModal";
 import { motion } from "framer-motion";
 
 export default function Hero() {
@@ -15,9 +16,9 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="text-5xl md:text-6xl font-bold leading-tight"
         >
-          Production-Ready DevOps <br />
+          Enterprise-Grade DevOps Infrastructure  <br />
           <span className="text-blue-500">
-            For Growing SaaS Teams
+            for High-Growth Startups
           </span>
         </motion.h1>
 
@@ -37,12 +38,7 @@ export default function Hero() {
           transition={{ delay: 0.4, duration: 0.8 }}
           className="mt-10 flex justify-center gap-4"
         >
-          <a
-            href="#"
-            className="px-8 py-4 rounded-xl bg-blue-600 hover:bg-blue-500 transition font-semibold shadow-lg shadow-blue-600/20"
-          >
-            Book Strategy Call
-          </a>
+            <BookingModal />
 
           <a
             href="#packages"

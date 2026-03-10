@@ -21,7 +21,7 @@ export default function Packages() {
         {/* Cards */}
         <div className="grid md:grid-cols-2 gap-8">
           {/* Tier 1 */}
-          <div className="p-10 rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10">
+          <div className="p-10 rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 hover:scale-[1.02] hover:shadow-2xl hover:shadow-blue-600/10 transition-all duration-300">
             <div className="text-sm text-blue-400 font-medium mb-3">
               🥇 Tier 1
             </div>

@@ -9,6 +9,9 @@ import CTA from "@/sections/CTA";
 import BackgroundGrid from "@/components/BackgroundGrid";
 import Trust from "@/sections/Trust";
 import Testimonials from "@/sections/Testimonials";
+import Founder from "@/sections/Founder";
+import CaseStudy from "@/sections/CaseStuday";
+import Architecture from "@/sections/Architecture";
 
 export default function Home() {
   return (
@@ -22,7 +25,10 @@ export default function Home() {
       <Packages />
       <Process />
       <FAQ />
+      <CaseStudy/>
+      <Architecture/>
       <Testimonials/>
+      <Founder/>
       <CTA />
     </main>
   );

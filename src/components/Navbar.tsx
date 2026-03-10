@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import BookingModal from "./BookingModal";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -42,12 +43,8 @@ export default function Navbar() {
         </nav>
 
         {/* CTA */}
-        <a
-          href="#"
-          className="px-5 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-500 transition font-medium shadow-lg shadow-blue-600/20"
-        >
-          Book Call
-        </a>
+         <BookingModal />
+      
       </div>
     </header>
   );
