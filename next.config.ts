@@ -1,15 +1,20 @@
 import type { NextConfig } from "next";
 
+const repo = "https://github.com/bipro-b/biprodev"; // change this to your GitHub repo name
+
 const nextConfig: NextConfig = {
   reactCompiler: true,
-  output: 'export',
+
+  // Static export for GitHub Pages
+  output: "export",
+
+  // Required for GitHub Pages routing
+  basePath: `/${repo}`,
+  assetPrefix: `/${repo}/`,
+
   images: {
     unoptimized: true,
   },
-  // Add this line specifically for your repository name:
-  basePath: '/biprodev', 
-  // This ensures internal links and assets point to /biprodev/ instead of /
-  assetPrefix: '/biprodev', 
 };
 
 export default nextConfig;
