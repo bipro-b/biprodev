@@ -4,15 +4,14 @@ const repo = "biprodev";
 
 const nextConfig: NextConfig = {
   output: "export",
-  // Ensure the basePath starts with a slash but does NOT end with one
-  basePath: `/${repo}`, 
-  // assetPrefix should match basePath
-  assetPrefix: `/${repo}/`,
-  // This helps GitHub Pages resolve paths correctly
+  basePath: `/${repo}`,
+  // assetPrefix helps CSS/JS load from the subfolder
+  assetPrefix: `/${repo}/`, 
   trailingSlash: true, 
   images: {
     unoptimized: true,
   },
+  reactCompiler: true,
 };
 
 export default nextConfig;
