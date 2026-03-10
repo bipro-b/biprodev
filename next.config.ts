@@ -1,14 +1,15 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   reactCompiler: true,
-  output: 'export',      // Required for static site generation
+  output: 'export',
   images: {
-    unoptimized: true,   // Required because GitHub Pages doesn't have an image optimization server
+    unoptimized: true,
   },
-  // Optional: if your repo is NOT named "yourusername.github.io"
-  // basePath: '/your-repo-name', 
+  // Add this line specifically for your repository name:
+  basePath: '/biprodev', 
+  // This ensures internal links and assets point to /biprodev/ instead of /
+  assetPrefix: '/biprodev', 
 };
 
 export default nextConfig;
